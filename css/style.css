@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --green:#27ae60;
+   --orange:#f39c12;
+   --red:#e74c3c;
+   --black:#333;
+   --light-color:#666;
+   --white:#fff;
+   --light-bg:#f6f6f6;
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+
+
+}
+
+*{
+   font-family: 'Sawarabi Mincho', serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   color:var(--black);
+}
+
+*::selection{
+   background-color: red;
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background:linear-gradient(50deg, #92adfe, #ff77cd);
+   border:.2rem solid var(50deg, #92adfe, #ff77cd);
+}
+
+body{
+   background-color: var(--light-bg);
+   /* padding-bottom: 6.5rem; */
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+section{
+   padding:3rem 2rem;
+   max-width: 1200px;
+   margin:0 auto;
+}
+
+.btn{
+   background-color: #0909FF;
+   color: #fff;
+   display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   color:var(--white);
+   font-size: 1.8rem;
+   padding:1.3rem 3rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+}
+
+
+.btn:hover{
+   background: #00BFFF;
+   color: #000;
+}
+
+.disabled{
+   user-select: none;
+   pointer-events: none;
+   opacity: .5;
+}
+
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 3.5rem;
+}
+
+.message{
+   position: fixed;
+   top:9%;
+   left: 39%;
+   max-width: 1200px;
+   margin:0 auto;
+   background-color: var(--light-bg);
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+   z-index: 10000;
+}
+
+.message span{
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.message i{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--red);
+}
+
+.message i:hover{
+   color:var(--black);
+}
+
+
+
+.messages{
+   position: sticky;
+   top:0;
+   max-width: 1200px;
+   margin:0 auto;
+   background-color: var(--light-bg);
+   padding:2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+   z-index: 10000;
+}
+
+.messages span{
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.messages i{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--red);
+}
+
+.messages i:hover{
+   color:var(--black);
+}
+
+.empty{
+   padding:1.5rem;
+   background: var(--white);
+   color:var(--red);
+   border-radius: .5rem;
+   border:var(--border);
+   font-size: 2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow);
+   text-transform: capitalize;
+}
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+   }
+}
+
+.form-container{
+   background-image:linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(https://caltech-prod.s3.amazonaws.com/main/images/CollinCamerer-ShortSelling-0.2e16d0ba.fill-1600x810-c100.jpg);
+   background-size: cover;
+   background-position: center;
+   min-width: 213vh;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.form-container form{
+   width: 50rem;
+   background-color: var(--white);
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   text-align: center;
+   padding:2rem;
+}
+
+.formhash {
+   font-size: 1.8rem;
+   margin-left: -20%;
+   padding-top: 1.5%;
+}
+
+.form-container form h3{
+   font-size: 3rem;
+   color:#B21807;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+}
+
+.form-container form .box{
+   width: 100%;
+   margin:1rem 0;
+   border-radius: 1.5rem;
+   border:var(--border);
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color:var(--black);
+   background-color: var(--light-bg);
+}
+
+.form-container form p{
+   margin-top: 2rem;
+   font-size: 1.8rem;
+   color:var(--light-color);
+}
+
+.form-container form p a{
+   color:#F70D1A;
+}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+}
+
+
+.flexx {
+   padding-top: 2.5%;
+   font-size: 1.8rem;
+   padding-right: 68%;
+}
+.flexxx {
+   margin-top: 2%;
+   font-size: 1.8rem;
+   padding-right: 60%;
+}
+
+
+
+
+.log-container{
+   background-image:linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(https://dfi.wa.gov/sites/default/files/investing-stocks-16x9.jpg);
+   background-size: cover;
+   background-position: center;
+   min-width: 213vh;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.log-container form{
+   width: 50rem;
+   background-color: var(--white);
+   border-radius: .5rem;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   text-align: center;
+   padding:2rem;
+}
+
+.log-container form h3{
+   font-size: 3rem;
+   color:#B21807;
+   margin-bottom: 1rem;
+   text-transform: uppercase;
+}
+
+.log-container form .box{
+   width: 100%;
+   margin:1rem 0;
+   border-radius: 1.5rem;
+   border:var(--border);
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color:var(--black);
+   background-color: var(--light-bg);
+}
+
+.log-container form p{
+   margin-top: 2rem;
+   font-size: 1.8rem;
+   color:var(--light-color);
+}
+
+.log-container form p a{
+   color:#F70D1A;
+}
+
+.log-container form p a:hover{
+   text-decoration: underline;
+}
+
+
+.contact form{
+   margin:0 auto;
+   max-width: 50rem;
+   padding:2rem;
+   text-align: center;
+   border:var(--border);
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   padding-top: 1rem;
+}
+
+.contact form .box{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+   margin:1rem 0;
+   background-color: var(--light-bg);
+   font-size: 1.8rem;
+   color:var(--black);
+   border-radius: .5rem;
+}
+
+.contact form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+
+.heading-contact{
+   min-height: 72vh;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   background:linear-gradient(rgba(4, 9, 30, 0.6),rgba(4, 9, 30, 0.7)), url(../images/contact1.jpg) no-repeat;
+   background-size: cover;
+   background-position: top;
+   text-align: center;
+}
+
+.heading-contact h3{
+   font-size: 5.8rem;
+   color:#F433FF;
+   text-transform: uppercase;
+}
+
+.heading-contact p{
+   font-size: 2.7rem;
+   color: #fff;;
+}
+
+.heading-contact p a{
+   color:#1E90FF;
+}
+
+.heading-contact p a:hover{
+   text-decoration: underline;
+}

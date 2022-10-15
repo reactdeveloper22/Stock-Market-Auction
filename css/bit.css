@@ -1,0 +1,162 @@
+ .title {
+     text-align: center;
+     margin-bottom: 2rem;
+     text-transform: uppercase;
+     color: var(--black);
+     font-size: 3.5rem;
+ }
+
+ .card {
+     text-align: center;
+     text-align: center;
+     display: flex;
+     margin-left: 20%;
+     margin-top: 5%;
+     margin-bottom: 10%;
+     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+ }
+
+ .control-label {
+     font-size: 2rem;
+     text-align: center;
+     padding-left: 20%;
+     display: flex;
+ }
+
+ .card-tit {
+     text-align: center;
+     margin-bottom: 2.5%;
+     font-size: 2rem;
+     margin-left: 5%;
+ }
+
+ .card-title {
+     font-size: 2.8rem;
+     font-weight: 600;
+     color: red;
+ }
+
+ .input-group-text {
+     display: flex;
+     font-size: 1.3rem;
+     margin-left: 8%;
+     color: red;
+ }
+
+ .input-group {
+     padding-right: 3%;
+ }
+
+ .form-control {
+     font-weight: 600;
+     font-size: 1.3rem;
+     text-align: center;
+ }
+
+ .btn {
+     width: 20%;
+     margin-top: 1rem;
+     border-radius: .5rem;
+     color: aliceblue;
+     font-size: 1.3rem;
+     padding: 1.3rem 3rem;
+     text-transform: capitalize;
+     cursor: pointer;
+     text-align: center;
+ }
+
+ .btn-primary {
+     font-weight: 600;
+ }
+
+ .btn-warning {
+     color: black;
+ }
+
+ .spanOne {
+     display: flex;
+     font-size: 1.3rem;
+     margin-left: 8%;
+     color: blue;
+ }
+
+
+ .messages img {
+     width: 100px;
+     margin-top: -50px;
+     border-radius: 50%;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ .messages button {
+     width: 100%;
+     margin-top: 50px;
+     padding: 10px 0;
+     background: #6fd649;
+     color: #fff;
+     border: 0;
+     outline: none;
+     font-size: 18px;
+     border-radius: 4px;
+     cursor: pointer;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+ }
+
+
+
+ .messages {
+     width: 400px;
+     background: #F8F8FF;
+     border-radius: 20px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(1);
+     text-align: center;
+     padding: 0 30px 30px;
+     color: #333;
+     transition: transform 0.4s, top 0.4s;
+     z-index: 10000;
+ }
+
+ .messages span {
+     font-size: 20px;
+     font-weight: 500;
+     margin: 30px 0 10px;
+     color: #000;
+ }
+
+ .messages h2 {
+     font-size: 38px;
+     font-weight: 500;
+     margin: 30px 0 10px;
+ }
+
+ .card {
+     margin-right: 20%;
+ }
+
+ .btn-end {
+     width: 15%;
+     margin-top: 1rem;
+     border-radius: .5rem;
+     font-size: 1.0rem;
+     padding: 1.3rem 3rem;
+     text-transform: capitalize;
+     cursor: pointer;
+     text-align: center;
+     font-weight: 600;
+     background-color: red;
+     color: #fff;
+     margin-left: 43%;
+ }
+
+ .btn-end:hover {
+     background-color: orange;
+     color: #000;
+ }
+
+ .list-group-item {
+    font-weight: 600;
+    font-size: 1.2rem;
+ }
